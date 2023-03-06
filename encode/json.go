@@ -1,12 +1,14 @@
 package encode
 
 import (
-	"encoding/json"
+	//"encoding/json"
 	"errors"
 	"github.com/guonaihong/gout/core"
+	jsoniter "github.com/json-iterator/go"
 	"io"
 )
 
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 var ErrNotJSON = errors.New("Not json data")
 
 // JSONEncode json encoder structure

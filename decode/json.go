@@ -1,9 +1,12 @@
 package decode
 
 import (
-	"encoding/json"
+	//"encoding/json"
+	jsoniter "github.com/json-iterator/go"
 	"io"
 )
+
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 // JSONDecode json decoder core data structure
 type JSONDecode struct {
