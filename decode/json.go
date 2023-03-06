@@ -6,7 +6,7 @@ import (
 	"io"
 )
 
-var json = jsoniter.ConfigCompatibleWithStandardLibrary
+var json = jsoniter.ConfigFastest
 
 // JSONDecode json decoder core data structure
 type JSONDecode struct {

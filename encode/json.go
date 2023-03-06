@@ -8,7 +8,7 @@ import (
 	"io"
 )
 
-var json = jsoniter.ConfigCompatibleWithStandardLibrary
+var json = jsoniter.ConfigFastest
 var ErrNotJSON = errors.New("Not json data")
 
 // JSONEncode json encoder structure
